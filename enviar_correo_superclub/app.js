@@ -1,3 +1,6 @@
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SendgridApiKey)
+
 exports.handler = async (event, context, callback) => {
     let headers = {
         "Access-Control-Allow-Origin": "*",
@@ -5,6 +8,21 @@ exports.handler = async (event, context, callback) => {
         "Content-Type": "application/json"
     }
     try {
+        let superclubNombreNino = 'Andre'
+        let msg = {
+            to: "andre8tr@gmail.com",
+            from: "andre.tirado@cemaco.com",
+            subject: 'Prueba',
+            text: 'Nueva inscripcion',
+            templateId: 'd-5f7ac94ed1e04b38b19f4bff158e990b',
+            dynamic_template_data : {
+                superclubNombreNino: superclubNombreNino
+
+            }
+        }
+
+        sgMail.send(msg);
+
         callback(null, {
             'statusCode': 200,
             'body': JSON.stringify({
