@@ -42,7 +42,7 @@ exports.handler = async (event, context, callback) => {
             from: "andre.tirado@cemaco.com",
             subject: 'Prueba',
             text: 'Nueva inscripcion',
-            templateId: 'd-5f7ac94ed1e04b38b19f4bff158e990b',
+            templateId: 'd-d3dedba1d3e64af9bc7db760dbb0265d',
             dynamic_template_data: {
                 superclubNombreNino: superclubNombreNino,
                 superclubApellidos: superclubApellidos
