@@ -45,8 +45,30 @@ exports.handler = async (event, context, callback) => {
             templateId: 'd-d3dedba1d3e64af9bc7db760dbb0265d',
             dynamic_template_data: {
                 superclubNombreNino: superclubNombreNino,
-                superclubApellidos: superclubApellidos
-
+                superclubApellidos: superclubApellidos,
+                superclubEmail: superclubEmail,
+                superclubConfirmar: superclubConfirmar,
+                superclubFechaNacimiento: superclubFechaNacimiento,
+                superclubGeneroF: superclubGeneroF,
+                superclubGeneroM: superclubGeneroM,
+                superclubIntereses: superclubIntereses,
+                superclubParentesco: superclubParentesco,
+                superclubNombresPapas: superclubNombresPapas,
+                superclubApellidosPapas: superclubApellidosPapas,
+                superclubDPI: superclubDPI,
+                superclubNoPrivilegio: superclubNoPrivilegio,
+                superclubFechaPapas: superclubFechaPapas,
+                superclubGeneroPapasF: superclubGeneroPapasF,
+                superclubGeneroPapasM: superclubGeneroPapasM,
+                superclubCorreoPapas: superclubCorreoPapas,
+                superclubConfirmarPapas: superclubConfirmarPapas,
+                superclubTelefono: superclubTelefono,
+                superclubTelefonoCelular: superclubTelefonoCelular,
+                superclubZona: superclubZona,
+                superclubDepartamento: superclubDepartamento,
+                superclubDireccion: superclubDireccion,
+                superclubDireccionMisma: superclubDireccionMisma,
+                superclubDireccionOtra: superclubDireccionOtra
             }
         }
 
