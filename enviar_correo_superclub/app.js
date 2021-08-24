@@ -9,7 +9,8 @@ exports.handler = async (event, context, callback) => {
     }
     try {
         let body = JSON.parse(event.body);
-        let superclubNombreNino = body.superclubNombreNino;
+        let params = event.queryStringParameters
+        let superclubNombreNino = params.superclubNombreNino;
         let msg = {
             to: "andre8tr@gmail.com",
             from: "andre.tirado@cemaco.com",
