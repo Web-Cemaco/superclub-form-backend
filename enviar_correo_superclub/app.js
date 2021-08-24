@@ -8,6 +8,8 @@ exports.handler = async (event, context, callback) => {
         "Content-Type": "application/json"
     }
     try {
+        let body = JSON.parse(event.body);
+        let superclubNombreNino = body.superclubNombreNino;
         let msg = {
             to: "andre8tr@gmail.com",
             from: "andre.tirado@cemaco.com",
