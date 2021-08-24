@@ -8,6 +8,8 @@ exports.handler = async (event, context, callback) => {
         "Content-Type": "application/json"
     }
     try {
+
+        console.log(event)
         let body = JSON.parse(event.body);
         let params = event.queryStringParameters
         let superclubNombreNino = params.superclubNombreNino;
