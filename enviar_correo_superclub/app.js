@@ -14,7 +14,7 @@ exports.handler = async (event, context, callback) => {
         let params = event.queryStringParameters
         let superclubNombreNino = params.superclubNombreNino;
         let superclubApellidos = params.superclubApellidos;
-        let superclubEmail = params.superclubEmail;
+        let superclubEmail = body.superclubEmail;
         let superclubConfirmar = params.superclubConfirmar;
         let superclubFechaNacimiento = params.superclubFechaNacimiento;
         let superclubGeneroF = params.superclubGeneroF;
