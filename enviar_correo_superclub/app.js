@@ -50,7 +50,7 @@ exports.handler = async (event, context, callback) => {
                 superclubNombreNino: superclubNombreNino,
                 superclubApellidos: superclubApellidos,
                 superclubEmail: superclubEmail,
-                superclubConfirmar: superclubConfirmar/*,
+                superclubConfirmar: superclubConfirmar,
                 superclubFechaNacimiento: superclubFechaNacimiento,
                 superclubGeneroF: superclubGeneroF,
                 superclubGeneroM: superclubGeneroM,
@@ -71,7 +71,7 @@ exports.handler = async (event, context, callback) => {
                 superclubDepartamento: superclubDepartamento,
                 superclubDireccion: superclubDireccion,
                 superclubDireccionMisma: superclubDireccionMisma,
-                superclubDireccionOtra: superclubDireccionOtra*/
+                superclubDireccionOtra: superclubDireccionOtra
             }
         }
 
