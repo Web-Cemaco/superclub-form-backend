@@ -12,8 +12,8 @@ exports.handler = async (event, context, callback) => {
         console.log(event)
         let body = JSON.parse(event.body);
         let params = event.queryStringParameters
-        let superclubNombreNino = params.superclubNombreNino;
-        let superclubApellidos = params.superclubApellidos;
+        let superclubNombreNino = body.superclubNombreNino;
+        let superclubApellidos = body.superclubApellidos;
         let superclubEmail = body.superclubEmail;
         let superclubConfirmar = params.superclubConfirmar;
         let superclubFechaNacimiento = params.superclubFechaNacimiento;
@@ -48,7 +48,7 @@ exports.handler = async (event, context, callback) => {
             dynamic_template_data: {
                 superclubNombreNino: superclubNombreNino,
                 superclubApellidos: superclubApellidos,
-                superclubEmail: superclubEmail,
+                superclubEmail: superclubEmail/*,
                 superclubConfirmar: superclubConfirmar,
                 superclubFechaNacimiento: superclubFechaNacimiento,
                 superclubGeneroF: superclubGeneroF,
@@ -70,7 +70,7 @@ exports.handler = async (event, context, callback) => {
                 superclubDepartamento: superclubDepartamento,
                 superclubDireccion: superclubDireccion,
                 superclubDireccionMisma: superclubDireccionMisma,
-                superclubDireccionOtra: superclubDireccionOtra
+                superclubDireccionOtra: superclubDireccionOtra*/
             }
         }
 
