@@ -49,8 +49,8 @@ exports.handler = async (event, context, callback) => {
             dynamic_template_data: {
                 superclubNombreNino: superclubNombreNino,
                 superclubApellidos: superclubApellidos,
-                superclubEmail: superclubEmail/*,
-                superclubConfirmar: superclubConfirmar,
+                superclubEmail: superclubEmail,
+                superclubConfirmar: superclubConfirmar/*,
                 superclubFechaNacimiento: superclubFechaNacimiento,
                 superclubGeneroF: superclubGeneroF,
                 superclubGeneroM: superclubGeneroM,
