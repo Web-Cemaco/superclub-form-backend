@@ -11,35 +11,35 @@ exports.handler = async (event, context, callback) => {
 
         console.log(event)
         let body = JSON.parse(event.body);
-        let params = event.queryStringParameters
+        //let params = event.queryStringParameters
         let superclubNombreNino = body.superclubNombreNino;
         let superclubApellidos = body.superclubApellidos;
         let superclubEmail = body.superclubEmail;
         console.log(superclubNombreNino)
-        let superclubConfirmar = params.superclubConfirmar;
-        let superclubFechaNacimiento = params.superclubFechaNacimiento;
-        let superclubGeneroF = params.superclubGeneroF;
-        let superclubGeneroM = params.superclubGeneroM;
-        let superclubIntereses = params.superclubIntereses;
+        let superclubConfirmar = body.superclubConfirmar;
+        let superclubFechaNacimiento = body.superclubFechaNacimiento;
+        let superclubGeneroF = body.superclubGeneroF;
+        let superclubGeneroM = body.superclubGeneroM;
+        let superclubIntereses = body.superclubIntereses;
 
         //Datos de encargado
-        let superclubParentesco = params.superclubParentesco;
-        let superclubNombresPapas = params.superclubNombresPapas;
-        let superclubApellidosPapas = params.superclubApellidosPapas;
-        let superclubDPI = params.superclubDPI;
-        let superclubNoPrivilegio = params.superclubNoPrivilegio;
-        let superclubFechaPapas = params.superclubFechaPapas;
-        let superclubGeneroPapasF = params.superclubGeneroPapasF;
-        let superclubGeneroPapasM = params.superclubGeneroPapasM;
-        let superclubCorreoPapas = params.superclubCorreoPapas;
-        let superclubConfirmarPapas = params.superclubConfirmarPapas;
-        let superclubTelefono = params.superclubTelefono;
-        let superclubTelefonoCelular = params.superclubTelefonoCelular;
-        let superclubZona = params.superclubZona;
-        let superclubDepartamento = params.superclubDepartamento;
-        let superclubDireccion = params.superclubDireccion;
-        let superclubDireccionMisma = params.superclubDireccionMisma;
-        let superclubDireccionOtra = params.superclubDireccionOtra;
+        let superclubParentesco = body.superclubParentesco;
+        let superclubNombresPapas = body.superclubNombresPapas;
+        let superclubApellidosPapas = body.superclubApellidosPapas;
+        let superclubDPI = body.superclubDPI;
+        let superclubNoPrivilegio = body.superclubNoPrivilegio;
+        let superclubFechaPapas = body.superclubFechaPapas;
+        let superclubGeneroPapasF = body.superclubGeneroPapasF;
+        let superclubGeneroPapasM = body.superclubGeneroPapasM;
+        let superclubCorreoPapas = body.superclubCorreoPapas;
+        let superclubConfirmarPapas = body.superclubConfirmarPapas;
+        let superclubTelefono = body.superclubTelefono;
+        let superclubTelefonoCelular = body.superclubTelefonoCelular;
+        let superclubZona = body.superclubZona;
+        let superclubDepartamento = body.superclubDepartamento;
+        let superclubDireccion = body.superclubDireccion;
+        let superclubDireccionMisma = body.superclubDireccionMisma;
+        let superclubDireccionOtra = body.superclubDireccionOtra;
         let msg = {
             to: "andre8tr@gmail.com",
             from: "andre.tirado@cemaco.com",
@@ -85,6 +85,7 @@ exports.handler = async (event, context, callback) => {
             headers: headers
         })
     } catch (err) {
+        console.log(err);
         callback(null, {
             'statusCode': 500,
             'body': JSON.stringify({
