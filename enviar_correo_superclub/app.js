@@ -15,6 +15,7 @@ exports.handler = async (event, context, callback) => {
         let superclubNombreNino = body.superclubNombreNino;
         let superclubApellidos = body.superclubApellidos;
         let superclubEmail = body.superclubEmail;
+        console.log(superclubNombreNino)
         let superclubConfirmar = params.superclubConfirmar;
         let superclubFechaNacimiento = params.superclubFechaNacimiento;
         let superclubGeneroF = params.superclubGeneroF;
