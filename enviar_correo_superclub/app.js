@@ -18,8 +18,7 @@ exports.handler = async (event, context, callback) => {
         console.log(superclubNombreNino)
         let superclubConfirmar = body.superclubConfirmar;
         let superclubFechaNacimiento = body.superclubFechaNacimiento;
-        let superclubGeneroF = body.superclubGeneroF;
-        let superclubGeneroM = body.superclubGeneroM;
+        let superclubGenero = body.superclubGenero;
         let superclubIntereses = body.superclubIntereses;
 
         //Datos de encargado
@@ -29,8 +28,7 @@ exports.handler = async (event, context, callback) => {
         let superclubDPI = body.superclubDPI;
         let superclubNoPrivilegio = body.superclubNoPrivilegio;
         let superclubFechaPapas = body.superclubFechaPapas;
-        let superclubGeneroPapasF = body.superclubGeneroPapasF;
-        let superclubGeneroPapasM = body.superclubGeneroPapasM;
+        let superclubGeneroAdulto = body.superclubGeneroAdulto;
         let superclubCorreoPapas = body.superclubCorreoPapas;
         let superclubConfirmarPapas = body.superclubConfirmarPapas;
         let superclubTelefono = body.superclubTelefono;
