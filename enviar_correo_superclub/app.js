@@ -40,7 +40,7 @@ exports.handler = async (event, context, callback) => {
         let superclubDireccionOtra = body.superclubDireccionOtra;
         let msg = {
             to: "andre8tr@gmail.com",
-            from: "andre.tirado@cemaco.com",
+            from: "seily.suchi@cemaco.com",
             subject: 'Prueba',
             text: 'Nueva inscripcion',
             templateId: 'd-d3dedba1d3e64af9bc7db760dbb0265d',
