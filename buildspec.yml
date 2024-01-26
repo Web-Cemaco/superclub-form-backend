@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+    install:
+        runtime-versions:
+            nodejs: 14
+    build:
+        commands:
+            - aws s3 cp s3://$APPSETTINGS_BUCKET_NAME/$APPSETTINGS_KEY .
+            - sam build && sam deploy --config-file samconfig.toml --s3-bucket $ARTIFACTS_BUCKET --capabilities CAPABILITY_NAMED_IAM --no-fail-on-empty-changeset
